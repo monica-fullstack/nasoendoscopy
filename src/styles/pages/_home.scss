@@ -21,14 +21,6 @@
       border-bottom: 16px solid $pear;
     }
 
-    .col-left,
-    .col-right {
-      height: 500px;
-
-      background-position: center;
-      background-size: cover;
-    }
-
     .col-left {
       flex: 0 0 48%;
 
@@ -44,9 +36,16 @@
       clip-path: polygon(100% 0, 100% 73%, 85% 100%, 30.6% 100%, 0 0);
     }
 
-    .img-left,
-    .img-right {
-      @extend .img-fluid
+    .img-bg-left,
+    .img-bg-right {
+      height: 500px;
+
+      background-position: center;
+      background-size: cover;
+    }
+
+    .img-bg-right {
+      transform: scaleX(-1);
     }
   }
 }
