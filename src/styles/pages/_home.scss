@@ -1,0 +1,72 @@
+//main: ../main.scss
+
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the home page.
+// -----------------------------------------------------------------------------
+
+.home {
+  transition: all .2s ease-in-out;
+
+  .section-intro {
+    padding: 40px 0;
+
+    text-align: center;
+
+    .container-custom {
+      max-width: 100%;
+    }
+
+    .custom-row {
+      background: $pear;
+      border-bottom: 16px solid $pear;
+    }
+
+    .col-left,
+    .col-right {
+      height: 500px;
+
+      background-position: center;
+      background-size: cover;
+    }
+
+    .col-left {
+      flex: 0 0 48%;
+
+      -webkit-clip-path: polygon(0 57%, 54% 0, 100% 100%, 0 100%);
+      clip-path: polygon(0 57%, 54% 0, 100% 100%, 0 100%);
+    }
+
+    .col-right {
+      flex: 0 0 72.6%;
+      margin-left: -20.6%;
+
+      -webkit-clip-path: polygon(100% 0, 100% 81%, 82% 100%, 21% 100%, 0 0);
+      clip-path: polygon(100% 0, 100% 73%, 85% 100%, 30.6% 100%, 0 0);
+    }
+
+    .img-left,
+    .img-right {
+      @extend .img-fluid
+    }
+  }
+}
+
+
+.swiper-container {
+  margin-top: 40px;
+  width: 500px;
+  height: 300px;
+  overflow: hidden;
+
+  border: 2px #007aff solid;
+  border-radius: 3px;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
